@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo{
+    color: white;
+    align-items: center;
+    margin-left: 150px;
+    text-decoration: underline;
+    text-align: center;
+    background-color: black;
+    display: inline;
+}
+
+#titulo-trabajo{
+    color: white;
+    align-items: center;
+    margin-left: 50px;
+    text-decoration: underline;
+    text-align: center;
+    background-color: black;
+    display: inline;
+}
+
+body{
+    background-image: url("../img/hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    margin-left: 5px;
+    width: 120 px;
+    height: 120px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.menu {
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: right;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background-color: #434343;
+}
+
+.multimedia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.multimedia iframe{
+    width: 860px;
+    height: 315px;
+}
+
+.multimedia img{
+    width: 600;
+    height: 300px;
+}
+
+.parrafo{
+    margin-left: 30px;
+    width: 250px;
+    height: 310px;
+    color: green;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border:solid 5px red;	
+    
+}
+
+#botonera{
+    margin-left: 450px;
+}
+
+.botonera-2{
+    margin-left: 600px;
+}
+
+.botones{
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    color: black;
+    background-color: pink;
+    border:solid 5px red;	
+}
+
+label{
+    font-weight: bold;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+legend{
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+footer div img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.linea-footer{
+    display: flex;
+    align-items: left;
+    width: 300px;
+    height: 30px;
+}
+
+.linea-footer p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.espaciado {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.centrar{
+    text-align: center;
+}
+
+ .grid{
+    display: grid;
+    grid-template-areas:
+        "header header nav"
+        "main main main"
+        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    margin-left: 200px;
+}
+
+main{
+    grid-area: main;
+    margin-left: 10px;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+
+

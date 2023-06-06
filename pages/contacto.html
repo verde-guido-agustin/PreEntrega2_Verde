@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <div class="grid">
+        <header class="top">
+            <img src="../img/logotipo.png" alt="logotipo" class="logo">
+            <h1 class="titulo">CONTACTO</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./quienes-somos.html">Quienes Somos</a></li>
+                    <li><a href="./trabajo.html">Trabaja Con Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Formulario Registro</legend>
+                
+                <label class="espaciado" for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+        
+                <label class="espaciado" for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+        
+                <label class="espaciado" for="email">Email</label>
+                <input type="email" name="email" id="email">
+        
+                <label class="espaciado" for="personas">Cantidad de personas</label>
+                <select name="Cantidad de personas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+        
+                <label class="espaciado" for="ingreso">Fecha de ingreso</label>
+                <input type="date" name="ingreso" id="ingreso">
+        
+                <label class="espaciado" for="egreso">Fecha de egreso</label>
+                <input type="date" name="egreso" id="egreso">
+                
+                <div class="espaciado">
+                    <input type="checkbox" id="terminos" name="terminos" value="Terminos y Condiciones">
+                    <label for="terminos"> Acepta los <a href="terminos-condiciones.html">Términos y Condiciones</a></label>
+                </div>
+        
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar formulario">
+        
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer>
+            <img class="logo" src="../img/logotipo.png" alt="logotipo">
+            <p class="linea-footer">TEL: 11-0101-1010</p>
+            <div class="linea-footer">
+                <img src="../img/mail.png" alt="logomail">
+                <p>contacto@newlife.com</p>
+            </div>
+            <div class="linea-footer">
+                <img src="../img/ubicacion.jpg" alt="logomail">
+                <p>Av Siempre Viva 742-Córdoba</p>
+            </div>
+            <div class="espacio">
+                <a href="https://www.instagram.com/homehotelba/?hl=es" target="_blank"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="https://wa.me/5491150500147" target="_blank"><img src="../img/wa.png" alt="wpp"></a>
+            </div>
+            <a class="espacio centrar" href="#top">Ir al top</a>
+            
+        </footer>
+    </div>
+    
+
+    
+</body>
+</html>
