@@ -1,26 +1,7 @@
+/* Reset CSS */
 *{
-    margin: 0px;
-    padding: 0px;
-}
-
-.titulo{
-    color: white;
-    align-items: center;
-    margin-left: 150px;
-    text-decoration: underline;
-    text-align: center;
-    background-color: black;
-    display: inline;
-}
-
-#titulo-trabajo{
-    color: white;
-    align-items: center;
-    margin-left: 50px;
-    text-decoration: underline;
-    text-align: center;
-    background-color: black;
-    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -29,44 +10,90 @@ body{
     background-size: cover;
 }
 
-.logo{
-    margin-left: 5px;
-    width: 120 px;
-    height: 120px;
+.grid{
+    display: grid;
+    grid-template-areas:
+        "header nav"
+        "main nav"
+        "footer footer";
+   grid-template-rows:  200px 1fr 280px;
+   grid-template-columns: 1fr 300px;
+
 }
 
-.top{
-    display: flex;
+header h1{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    background-color: green;
+    width: 1050px;
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    background-color: greenyellow;
+    width: 1050px;
+    
+}
+
+.barraHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
 }
 
-.menu {
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: right;
+.logo{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
-ul {
-    list-style: none;
+main{
+    grid-area: main;
+}
+
+/* Funciones para crear el menú desplegable */
+
+nav{
+    position: relative;
+    width:300px;
+    height:400px;
+    background: black;
+    grid-area: nav;
+    
+}
+
+nav img{
+    width: 100%;
+
 }
 
 nav ul li{
-    display: inline-block;
+    list-style-type: none;
+    padding: 12px 10px;
 }
 
 nav ul li a{
-    background-color: black;
-    color: white;
     text-decoration: none;
-    padding: 10px;
-    display: inline-block;
+    color: white;
+    font-weight: normal;
+
+    font-family: sans-serif;
+    opacity: .7;
+    font-size: 25px;
+
 }
 
-nav ul li a:hover{
-    background-color: #434343;
+nav li:hover{
+    background-color: red;
 }
+
+
+/* Finalizaron las funciones para crear menu desplegable */
 
 .multimedia{
     display: flex;
@@ -128,28 +155,34 @@ legend{
 }
 
 footer{
-    margin-top: 20px;
     width: 100%;
     background-color: greenyellow;
+    grid-area: footer;
 }
 
-footer div img{
+
+.linea img{
     width: 25px;
     height: 25px;
     margin-left: 5px;
 }
 
-.linea-footer{
+.linea{
     display: flex;
     align-items: left;
     width: 300px;
     height: 30px;
 }
 
-.linea-footer p{
+.linea p{
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 5px;
+}
+
+.redes img{
+    width: 25px;
+    height: 25px;
 }
 
 .espaciado {
@@ -164,29 +197,10 @@ footer div img{
 
  .grid{
     display: grid;
-    grid-template-areas:
-        "header header nav"
-        "main main main"
-        "footer footer footer";
+    
 }
 
-header{
-    grid-area: header;
-}
 
-nav{
-    grid-area: nav;
-    margin-left: 200px;
-}
-
-main{
-    grid-area: main;
-    margin-left: 10px;
-}
-
-footer{
-    grid-area: footer;
-}
 
 
 
