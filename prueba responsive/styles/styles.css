@@ -1,0 +1,130 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../PreEntrega2_Verde/img/hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;    
+    background-color: greenyellow;
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1{
+    width: fit-content;
+    height: auto;
+}
+
+header h2{
+    width: fit-content;
+    height: auto;
+}
+
+
+.logo{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    width: fit-content;
+    height: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover{
+    background-color: red;
+}
+
+.linea{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    background-color: greenyellow;
+}
+
+.linea img{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.redes img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        background: greenyellow;
+    }
+
+    nav li{
+        padding: 2px;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: underline;
+    }
+
+    nav a:hover{
+        color: red;
+        margin: 1px;
+    }
+
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    nav{
+        background: greenyellow;
+        margin-left: 10px;
+    }
+
+    nav li{
+        padding: 2px;
+    }
+
+    nav a{
+        color: black;
+        text-decoration: underline;
+    }
+
+    nav a:hover{
+        color: red;
+        margin: 1px;
+    }
+}
