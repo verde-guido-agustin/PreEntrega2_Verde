@@ -16,7 +16,7 @@ body{
         "header nav"
         "main nav"
         "footer footer";
-   grid-template-rows:  200px 1fr 280px;
+   grid-template-rows:  200px 800px 280px;
    grid-template-columns: 1050px 300px;
 
 }
@@ -62,7 +62,7 @@ main{
 nav{
     position: relative;
     width:300px;
-    height:80px;
+    height:60px;
     background: black;
     grid-area: nav;
     
@@ -126,42 +126,75 @@ nav:hover a{
 }
 
 
-
 /* Finalizaron las funciones para crear menu desplegable */
 
-.multimedia{
-    display: flex;
-    margin-bottom: 30px;
-}
 
-.multimedia iframe{
+#home iframe{
     width: 860px;
     height: 315px;
+    grid-area: video;
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-left: 200px;
 }
 
-.multimedia img{
-    width: 600;
+#home img{
+    width: 600px;
     height: 300px;
+    grid-area: foto;
+}
+
+#home section{
+    display: grid;
+    grid-template-areas: 
+        "foto texto"
+        "botonera texto";
+    grid-template-rows:  repeat(2,1fr);
+    grid-template-columns: 600px 600px;
+}
+
+#home section div{
+    grid-area: botonera;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.habitaciones{
+    display: grid;
+    grid-template-areas: 
+        "titulo"
+        "catalogo"
+        "botones";
+        grid-template-rows: 40px 300px 40px;
+}
+
+.habitaciones h2{
+    grid-area: titulo;
+}
+
+.catalogo-habitaciones{
+    grid-area: catalogo;
+}
+
+.catalogo-habitaciones img{
+    width: 400px;
+    height: 300px;
+}
+
+.habitaciones div{
+    grid-area: botones;
 }
 
 .parrafo{
     margin-left: 30px;
-    width: 250px;
-    height: 310px;
-    color: green;
-    background-color: white;
-    font-weight: bold;
+    width: 500px;
+    height: 200px;
+    color: white;
+    background-color: rgb(56, 58, 50);
     font-family: 'Times New Roman', Times, serif;
-    border:solid 5px red;	
+    border:solid 5px black;
+    grid-area: texto;	
     
-}
-
-#botonera{
-    margin-left: 450px;
-}
-
-.botonera-2{
-    margin-left: 600px;
 }
 
 .botones{
@@ -171,7 +204,13 @@ nav:hover a{
     display: inline-block;
     color: black;
     background-color: pink;
-    border:solid 5px red;	
+    border:solid 2px black;	
+}
+
+.botones:hover{
+    color: white;
+    background-color: black;
+    border: solid 5px red;
 }
 
 label{
