@@ -2,174 +2,161 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-image: url("../img/hotel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.grid{
-    display: grid;
-    grid-template-areas:
-        "header nav"
-        "main nav"
-        "footer footer";
-   grid-template-rows:  200px 800px 280px;
-   grid-template-columns: 1050px 300px;
-
-}
-
-header h1{
-    color: white;
-    text-decoration: underline;
-    text-align: center;
-    background-color: green;
-    width: 1050px;
+    font-family: 'Roboto Slab', serif;
 }
 
 header{
-    grid-area: header;
-    display: grid;
-    grid-template-rows: 1 fr 50px;
-    justify-content: center;
+    padding-top: 1%;
+    display: flex;
     background-color: greenyellow;
-    width: 1050px;
-    
+    min-height: 90px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 50px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.titulos h2{
+    font-size: 20px;
+}
+
+.titulos h1{
+    background-color: lightcoral;
+    color: white;
+    margin-left: 10px;
 }
 
 .barraHeader{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100vw;
 }
+
 
 .logo{
-    width: 120px;
-    height: 120px;
-    margin-top: 10px;
-    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
-main{
-    margin: 30px;
-    grid-area: main;
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* Funciones para crear el menú desplegable */
 
 nav{
-    position: relative;
-    width:300px;
-    height:60px;
-    background: black;
-    grid-area: nav;
-    
-}
-
-nav h1{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    margin: 20px;
-    opacity: .7;
-    font-size: 25px;
-}
-
-nav img{
-    margin-top: 20px;
-}
-
-nav:hover img{
-    width: 0;
-    height: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul{
-    padding:0px;
-}
-
-nav li{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
 nav a{
     text-decoration: none;
+    padding-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+nav a:hover{
     color: white;
-    opacity: .7;
-    font-size: 0px;
+    text-decoration: underline;
+    background-color: black;
+    margin: 2px;
 }
 
-nav:hover{
-    height:350px;
-}
-
-nav:hover ul{
-    margin-top: 30px;
-}
-
-nav:hover li{
-    padding: 12px 10px;
-    border-top:1px solid #3a92c9;
-    
-}
-
-nav:hover li:hover{
-    background-color: red;
-}
-
-nav:hover a{
-    font-family: sans-serif;
-    opacity: .7;
-    font-size: 25px;
-}
 
 
 /* Finalizaron las funciones para crear menu desplegable */
 
-
-#home iframe{
-    width: 860px;
-    height: 315px;
-    grid-area: video;
-    margin-bottom: 30px;
+main{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-left: 200px;
+    align-items: center;
 }
 
-#home img{
-    width: 600px;
-    height: 300px;
-    grid-area: foto;
+#video {
+    position: relative;
+    width: 100vw;
+    height: 25vw;
+}
+#video iframe {
+    position: absolute;
+    width: 80vw;
+    height: 20vw;
 }
 
-#home section{
-    display: grid;
-    grid-template-areas: 
-        "foto texto"
-        "botonera texto";
-    grid-template-rows:  repeat(2,1fr);
-    grid-template-columns: 600px 600px;
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#home section div{
-    grid-area: botonera;
-    margin-top: 10px;
-    margin-left: 200px;
+.catalogo img{
+    width: 40vw;
+    height: 30vw;
+    position: relative;
+}
+
+#home{
+    flex-wrap: wrap;
+}
+
+#home article{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40vw;
+    height: 30vw;
+    color: white;
+    background-color: rgb(56, 58, 50);
+    font-family: 'Times New Roman', Times, serif;
+    border:solid 5px black;
+}
+
+#home article p{
+    width: 100%;
+    height: 100px;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .habitaciones{
-    display: grid;
-    grid-template-areas: 
-        "titulo"
-        "catalogo"
-        "botones";
-        grid-template-rows: 40px 300px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .habitaciones h2{
-    grid-area: titulo;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .catalogo-habitaciones{
@@ -177,30 +164,14 @@ nav:hover a{
 }
 
 .catalogo-habitaciones img{
-    width: 400px;
-    height: 300px;
-}
-
-.habitaciones div{
-    grid-area: botones;
-}
-
-.parrafo{
-    margin-left: 30px;
-    width: 500px;
-    height: 200px;
-    color: white;
-    background-color: rgb(56, 58, 50);
-    font-family: 'Times New Roman', Times, serif;
-    border:solid 5px black;
-    grid-area: texto;	
-    
+    width: 40vw;
+    height: 30vw;
 }
 
 .botones{
     font-size: 15px;
-    width: 80px;
-    height: 30px;
+    max-width: 80px;
+    max-height: 30px;
     display: inline-block;
     color: black;
     background-color: pink;
@@ -228,8 +199,13 @@ legend{
 
 footer{
     width: 100%;
+    height: auto;
     background-color: greenyellow;
-    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -241,8 +217,8 @@ footer{
 
 .linea{
     display: flex;
-    align-items: left;
-    width: 300px;
+    flex-direction: row;
+    width: auto;
     height: 30px;
 }
 
@@ -266,6 +242,153 @@ footer{
 .centrar{
     text-align: center;
 }
+
+@media (max-width: 1176px) and (min-width: 729px){
+    .barraHeader{
+        flex-direction: column;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    .contacto{
+        flex-direction: row;
+    }
+
+    .redes{
+        margin-left: 2px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 729px){
+    .titulos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulos h1{
+        font-size: 20px;
+    }
+
+    .titulos h2, .contacto{
+        font-size: 15px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    footer a{
+        font-size: 15px;
+    }
+
+    .barraHeader{
+        flex-direction: column;
+    }
+
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:1010px) and (min-width:946px){
+    #home article p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:946px) and (min-width:774px){
+    #home article p{
+        font-size: 12px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .titulos h1{
+        font-size: 15px;
+    }
+
+    .titulos h2, .contacto{
+        font-size: 13px;
+    }
+
+    nav a{
+        font-size: 13px;
+    }
+
+    footer p, footer a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:776px) and (min-width:618px){
+    #home article p{
+        font-size: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .titulos h1{
+        font-size: 13px;
+    }
+
+    .titulos h2, .contacto{
+        font-size: 12px;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+
+    footer p, footer a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:618px){
+    #home{
+        flex-direction: column;
+    }
+
+    #home article p{
+        font-size: 10px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .titulos h1{
+        font-size: 12px;
+    }
+
+    .titulos h2, .contacto{
+        font-size: 11px;
+    }
+
+    nav a{
+        font-size: 11px;
+    }
+
+    footer p, footer a{
+        font-size: 11px;
+    }
+}
+
 
 
 

@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Star Hotel</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Roboto+Slab:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 <body>
 
-    <div class="grid">
-        <header>
-            <div class="barraHeader">
-                <img src="./img/logotipo.png" alt="logotipo" class="logo">
+    
+    <header>
+
+        <div class="barraHeader">
+            <div class="titulos">
+                <div class="linea">
+                    <img src="./img/logotipo.png" alt="logotipo" class="logo">
+                    <h2>New Star Hotel</h2>
+                </div>
+                <h1>HOME</h1>
+            </div>
+                
+            <div class="contacto">
                 <div class="linea">
                     <img src="./img/mail.png" alt="logomail">
                     <p>contacto@newlife.com</p>
@@ -27,18 +40,11 @@
                     <a href="https://www.instagram.com/homehotelba/?hl=es" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
                     <a href="https://wa.me/5491150500147" target="_blank"><img src="img/wa.png" alt="wpp"></a>
                 </div>
+    
             </div>
-            <h1>HOME</h1>
-
-        </header>
+        </div>
 
         <nav>
-
-            <div class="linea">
-                <h1>Menu de opciones</h1>
-                <img src="./img/desplegable.jpeg" alt="desplegable">
-            </div>
-
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
@@ -48,46 +54,52 @@
             </ul>
         </nav>
         
-    
-        <main id="home">
-            
+    </header>
+
+    <main>
+        
+        <div id="video" class="espaciado">
             <iframe src="https://www.youtube.com/embed/lXDr8ufW7tc?start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-            <section>
+        </div>
+        
+        <div id="home" class="espaciado">
+            <div class="catalogo">
                 <img src="img/hotel.webp" alt="Imagen">
                 <div>
                     <button class="botones">Anterior</button>
                     <button class="botones">Siguiente</button>
                 </div>
-                <article class="parrafo">
-                    <p class="espaciado">Es la combinación ideal de confort, buen servicio y excelente tarifa. 
-                        Ubicado en una zona privilegiada, a metros de la plaza principal de Córdoba, le ofrece al huésped un rápido acceso a los puntos turísticos más destacados de la zona.</p>
-    
-                    <p class="espaciado">New Star Hotel ha sido categorizado como un hotel tres estrellas superior, por la calidad de su infraestructura y la calidez de su servicio, que siempre es supervisado por sus propios dueños.</p>
-                </article>
-            </section>
-
-        </main>
-    
-        <footer>
-            <img class="logo" src="./img/logotipo.png" alt="logotipo">
-            <p class="linea">TEL: 11-0101-1010</p>
-            <div class="linea" class="espaciado">
-                <img src="./img/mail.png" alt="logomail">
-                <p>contacto@newlife.com</p>
             </div>
-            <div class="linea" class="espaciado">
-                <img src="./img/ubicacion.jpg" alt="logomail">
-                <p>Av Siempre Viva 742-Córdoba</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/homehotelba/?hl=es" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://wa.me/5491150500147" target="_blank"><img src="img/wa.png" alt="wpp"></a>
-            </div>
-            <a class="espacio centrar" href="#top">Ir al top</a>
             
-        </footer>
-    </div>
+            <article>
+                <p class="espaciado">Es la combinación ideal de confort, buen servicio y excelente tarifa. 
+                    Ubicado en una zona privilegiada, a metros de la plaza principal de Córdoba, le ofrece al huésped un rápido acceso a los puntos turísticos más destacados de la zona.</p>
+
+                <p class="espaciado">New Star Hotel ha sido categorizado como un hotel tres estrellas superior, por la calidad de su infraestructura y la calidez de su servicio, que siempre es supervisado por sus propios dueños.</p>
+            </article>
+        </div>
+
+    </main>
+
+    <footer>
+        <img class="logo" src="./img/logotipo.png" alt="logotipo">
+        <p class="linea">TEL: 11-0101-1010</p>
+        <div class="linea" class="espaciado">
+            <img src="./img/mail.png" alt="logomail">
+            <p>contacto@newlife.com</p>
+        </div>
+        <div class="linea" class="espaciado">
+            <img src="./img/ubicacion.jpg" alt="logomail">
+            <p>Av Siempre Viva 742-Córdoba</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/homehotelba/?hl=es" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/5491150500147" target="_blank"><img src="img/wa.png" alt="wpp"></a>
+        </div>
+        <a href="#top">Ir al top</a>
+        
+    </footer>
+
 
     
     
